@@ -13,13 +13,64 @@
 .find-icons__icon span {
   margin-top: 18px;
 }
-.recommended-freinds {
+.recommended-friends {
   border-top: var(--main-border);
   border-bottom: var(--main-border);
   padding: 25px 0px;
   margin: 25px 0px;
 }
-.recommended-freinds__title {
+.recommended-friends__title {
   font-size: 14px;
   color: var(--gray);
+}
+.recommended-friends span {
+  display: block;
+  margin: 110px 0;
+  text-align: center;
+  font-size: 18px;
+  color: var(--gray);
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8; /*color로 그레이 색상을 표현해도 됨*/
+  margin-bottom: 25px;
+}
+.open-chat__header span {
+  opacity: 0.6; /*span 안에 i태그를 넣어서 같이 색상 적용*/
+}
+.open-post {
+  display: flex;
+}
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.open-post__hashtags {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.open-post__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+.open-post__members img {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%; /* 스퀘어를 서클로 둥글게 만들어주는 것과 같음*/
+  margin-right: 7px;
+}
+.open-post__memeber-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.open-post__members .divider {
+  width: 1px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: var(--gray);
+}
+.open-post__member-status {
+  color: rgb(255, 119, 202);
 }
