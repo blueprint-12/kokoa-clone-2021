@@ -12,3 +12,12 @@
      left: 15px;
     bottom: 15px;  이 부분만 .nav__notification과 다른점*/
 }
+.badge__dot {
+  background-color: tomato;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  left: 30px;
+  top: -15px;
+}
