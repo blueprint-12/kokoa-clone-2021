@@ -1,0 +1,18 @@
+.user-component__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exclamation_mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ff6e5e;
+  border-radius: 50%;
+  color: #ff6e5e;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 10px;
+}
