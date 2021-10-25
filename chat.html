@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat not Chats - kokoa Clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -25,7 +25,7 @@
 
     <header class="alt-header">
       <div class="alt-header__column">
-        <a href="more.html">
+        <a href="chats.html">
           <i class="fas fa-angle-left fa-2x"></i>
         </a>
       </div>
@@ -33,14 +33,27 @@
         <h1 class="alt-header__title">Ana Amari</h1>
       </div>
       <div class="alt-header__column">
-        <span class="alt-header__span-right"
-          ><i class="fas fa-search fa-lg"></i
-        ></span>
+        <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-bars fa-lg"></i></span>
       </div>
     </header>
 
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Monday, Oct 25, 2021</div>
+
+      <div class="message-row">
+        <img
+          src="https://pbs.twimg.com/profile_images/792663644852985856/1687WnCU_400x400.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Ana Amari</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

@@ -1,3 +1,28 @@
-.alt-header__span-right {
-  padding-right: 20px;
+#chat-screen {
+  background-color: #abc1d1;
+  height: 11000vh; /*스크롤을 주려고 길게 만듦 */
+}
+#chat-screen .status-bar {
+  background-color: #abc1d1;
+  z-index: 2;
+}
+#chat-screen .alt-header {
+  background-color: #abc1d1;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat__timestamp {
+  font-size: 14px;
+  color: white;
+  background-color: #92a4b2;
+  padding: 15px;
+  border-radius: 25px;
 }
