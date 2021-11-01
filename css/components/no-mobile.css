@@ -1,0 +1,24 @@
+#no-mobile {
+  display: none;
+}
+/*스크롤 불가 설정*/
+
+@media screen and (min-width: 645px) {
+  #no-mobile {
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+  }
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
