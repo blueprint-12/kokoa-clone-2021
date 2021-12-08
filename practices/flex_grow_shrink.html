@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grow & shrink properties</title>
+    <style>
+      .container {
+        background-color: powderblue;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+      }
+      .item {
+        background-color: blue;
+        color: white;
+        border: 1px solid white;
+      }
+      .item:nth-child(1) {
+        flex-basis: 150px;
+        flex-shrink: 2; /*화면이 줄어들 때, 3분의 2만큼을 분담하여 줄어든다 더 많이 줄게되는 것*/
+      }
+      .item:nth-child(2) {
+        flex-basis: 150px;
+        flex-shrink: 1; /*화면이 줄어들 때, 3분의 1만큼을 분담하여 줄어든다.*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
