@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>holy grail layout , 성배 레이아웃</title>
+  </head>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      /*높이를 주지 않으면 align-items 가 center 로 적용되는 것을 알 수 없습니다*/
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      width: 800px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid gray;
+    }
+    header {
+      border-bottom: 1px solid gray;
+      padding-left: 20px;
+    }
+    footer {
+      border-top: 1px solid gray;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      display: flex;
+    }
+    .content nav {
+      border-right: 1px solid gray;
+    }
+    .content aside {
+      border-left: 1px solid gray;
+    }
+    nav,
+    aside {
+      flex-basis: 150px;
+      flex-shrink: 0;
+    }
+    main {
+      padding: 10px;
+    }
+    nav {
+      order: -1;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <header>
+        <h1>생활코딩</h1>
+      </header>
+      <section class="content">
+        <main>
+          <!--  lorem1000 -->dicta saepe, magni nam cupiditate explicabo aliquid
+          minima sequi debitis dolores nihil neque assumenda dolore praesentium,
+          sint amet molestiae alias. Consequuntur, officiis in minima blanditiis
+          illum eos, nihil voluptas aspernatur architecto iure praesentium
+          nostrum expedita ipsa. Animi adipisci et alias veniam eius. Illo
+          tempora unde laboriosam accusamus doloremque deserunt impedit
+          repudiandae aperiam maxime molestias blanditiis id accusantium aliquid
+          error quis iste earum veniam odit praesentium quae optio, ea atque in
+          repellendus. Architecto consequuntur similique sit rerum eveniet
+          delectus iure magni pariatur dolor libero nihil deserunt, temporibus
+          explicabo quae consectetur eum? Sint nihil sunt error deleniti soluta
+          dolorum aliquid inventore, ullam quam numquam exercitationem, dolores
+          eos commodi fugiat, accusantium eveniet impedit eum vero temporibus!
+          Velit reiciendis culpa, autem illo aliquid inventore, animi nulla ab,
+          esse dignissimos consectetur cumque eius facere! Voluptatum dicta
+          commodi vero natus hic dolores quia modi laboriosam ducimus quam
+          aliquid nihil possimus officiis in quasi fuga cum dolorum, iusto
+          fugiat voluptates magni nobis repellat ad inventore. Labore unde
+          explicabo harum! Quae modi saepe dolores recusandae odio. Nam
+          reiciendis cumque possimus ipsa. Doloremque, rem enim. Delectus eius
+          sed quia error, quo dolorem praesentium vero!
+        </main>
+        <nav>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </nav>
+        <aside>AD</aside>
+      </section>
+      <footer>
+        <a href="http://opentutorials.org/course/1"> 홈페이지 </a>
+      </footer>
+    </div>
+  </body>
+</html>
