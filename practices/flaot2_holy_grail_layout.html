@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float활용 성배 레이아웃 만들기</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        border-bottom: 1px solid gray;
+      }
+      .container {
+        width: 600px;
+        border: 1px solid gray;
+        margin: auto;
+        border-collapse: collapse;
+      }
+      nav {
+        float: left;
+        width: 120px;
+        border-right: 1px solid gray;
+      }
+      article {
+        float: left;
+        width: 300px;
+        border-left: 1px solid gray;
+        border-right: 1px solid gray;
+        margin-left: -1px;
+      }
+      aside {
+        float: left;
+        width: 120px;
+        border-left: 1px solid gray;
+        margin-left: -0.6px;
+      }
+      footer {
+        clear: both;
+        border-top: 1px solid gray;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>CSS</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>position</li>
+          <li>float</li>
+          <li>flex</li>
+        </ul>
+      </nav>
+      <article>
+        <h2>float</h2>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit,
+        eaque. Ratione harum perspiciatis, laudantium possimus natus eum
+        doloribus eligendi mollitia ullam vel est perferendis unde quo in
+        nesciunt! Similique commodi illum corrupti, recusandae repudiandae
+        molestiae nam reiciendis. Reprehenderit eos libero non, aliquam incidunt
+        dolorem deserunt similique sequi, nulla iure dignissimos!
+      </article>
+      <aside>
+        AD Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+        suscipit ducimus explicabo wonhee quam molestiae iure neque saepe
+        reiciendis inventore maiores ipsam atque sapiente, sed iusto, veritatis
+        quaerat similique dolore odio fugiat corporis eaque harum doloremque
+        numquam? Dignissimos exercitationem eos pariatur wonhee quidem delectus
+        iure rem aut deserunt eaque architecto wonhee , accusantium accusamus.
+      </aside>
+      <footer>copyleft</footer>
+    </div>
+  </body>
+</html>
